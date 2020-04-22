@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The XOR Cipher</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+          <h1>Simple JS Encryption</h1>
+          <form class="form" onsubmit="inputFunc();return false">
+          <div class="form-control">
+
+              <label for="encrypt">Input to Encryption</label>
+              <input
+              type="text"
+              placeholder="String....."
+              class="input"
+              id="inputEncrypt"
+             
+              />
+            </div>
+            <div class="form-control">
+
+                <label for="inputKey">Input the Key</label>
+                <input type="text" class="input" id="inputKey" placeholder="key to code...." />
+            </div>
+        <input type="submit" value="Submit" class="submit-btn" id="submit" />
+      </form>
+      <div class="output">
+        <h3> Encrypted output : 
+          <span id="encryptOutput"></span>
+        </h3>
+        <h2>Decrypted output : 
+          <span id="decryptOutput"></span>
+        </h2>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
